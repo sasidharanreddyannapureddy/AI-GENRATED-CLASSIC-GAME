@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Nunito", ui-sans-serif, system-ui, sans-serif;
+}
+
+body {
+  font-family: "Nunito", sans-serif;
+  background-color: #87CEEB; /* Sky blue background */
+  margin: 0;
+  padding: 0;
+}
+
+/* Checkerboard pattern for the game board */
+.game-board {
+  background-color: #a2d149;
+  background-image: linear-gradient(45deg, #aad751 25%, transparent 25%, transparent 75%, #aad751 75%, #aad751),
+                    linear-gradient(45deg, #aad751 25%, transparent 25%, transparent 75%, #aad751 75%, #aad751);
+  background-size: calc(100% / 10) calc(100% / 10); /* Will be overridden inline based on GRID_SIZE */
+  background-position: 0 0, calc(100% / 20) calc(100% / 20);
+}
